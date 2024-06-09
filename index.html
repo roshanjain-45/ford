@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+    <title>Ford® - New Hybrid &amp; Electric Vehicles, SUVs, Crossovers, Trucks, Vans &amp; Cars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="user-select: none;" theme="black">
+
+
+    <div id="cursor"
+        class="hidden w-4 h-4 font-medium rounded-full lg:flex justify-center text-center leading-none  items-center bg-[#0142BD] z-[3] text-[0.15rem] overflow-hidden fixed pointer-events-none ">
+    </div>
+
+    <div class="splashScreen fixed flex justify-center items-center bg-black w-screen h-screen z-50 text-white">
+        <h1
+            class="splLoad min font-thin md:font-thin lg:font-normal text-[10rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-transparent uppercase text-white ">
+        </h1>
+        <span id="copyright" class="text-lg self-end relative opacity-50 bottom-28">By - The Triple Threat</span>
+    </div>
+
+    <div id="main" class="wrapper">
+        <!-- Navbar started -->
+        <nav class="navbar z-10 p-3 px-10 flex bg-transparent justify-between items-center">
+
+            <a href="#" id="logo" class="flex gap-2 items-center">
+                <img class="object-cover max-w-15 max-h-10" src="./assets/Ford .png" alt="">
+            </a>
+            <div id="center" class="hidden md:flex gap-12">
+                <a href="#" class="underLineAnimation"> Vehicles </a>
+                <a href="#" class="underLineAnimation"> Shop </a>
+                <a href="#" class="underLineAnimation"> Support & Services </a>
+                <a href="#" class="underLineAnimation"> Help </a>
+            </div>
+            <div class="right hidden md:flex md:justify-center md:items-center gap-2">
+                <i class="ri-user-fill "></i>
+                <a href="#"> <i class="ri-global-fill"></i> </a>
+                <div class="searchBox">
+                    <input type="text" placeholder="Search Your Vehicle">
+                    <a href="#">
+                        <i class="searchbtn ri-search-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="ri-menu-line"></i>
+            </button>
+
+            <div id="nav-dialog" class="fixed md:hidden hidden bg-black inset-0 ">
+                <div id="nav-bar" class="flex justify-between p-3">
+                    <a href="#" id="logo" class="flex gap-2 items-center">
+                        <img class="object-cover max-w-15 max-h-10" src="./assets/Ford .png" alt="">
+                    </a>
+                    <button class="p-2 md:hidden" onclick="handleMenu()">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+                <div class="mt-6 flex flex-col text-center">
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Vehicles </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Shop </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Support & Services </a>
+                    <a href="#" class="font-medium m-3 p-3 hover:bg-slate-400 block rounded-lg"> Help </a>
+                </div>
+                <div class="nav-bottom flex justify-center items-center gap-10">
+                    <i class="ri-user-fill "></i>
+                    <a href="#"> <i class="ri-global-fill"></i> </a>
+                    <div class="searchBox fixed">
+                        <input type="text" placeholder="Search Your Vehicle">
+                        <a href="#">
+                            <i class="searchbtn ri-search-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- Navbar ended -->
+
+        <!-- Herosection Starts -->
+
+        <div id="herosection" class="heroSection w-screen h-screen relative flex ">
+            <div class="heroBg blur-lg w-full h-full absolute">
+                <img id="img" class=" sm:opacity-100 w-full h-full object-cover " src="./images/bg2.png" alt="">
+            </div>
+            <div class="heroCar absolute top-2/3 -translate-y-1/2 px-3 lg:scale-50 lg:top-[60%] z-[2]">
+                <a href="#sec3d"><img id="car" class="" src="./images/heroCar.png " alt=""></a>
+            </div>
+
+            <h1
+                class="heroTxt absolute flex justify-center top-60 uppercase text-[0px] lg:text-[10rem]  xl:text-[16rem] 2xl:text-[19rem] w-full h-full z-[1]">
+            </h1>
+            <div
+                class="absolute flex justify-center top-2/3 -translate-y-1/2 uppercase text-[6rem] lg:hidden w-full h-full">
+                <h1 class="smlHero leading-none tracking-tighter">
+                    <span class="font-light">Build</span> <br> <span class="font-semibold">Ford </span> <br> <span
+                        class="font-bold"> Tough </span>
+                </h1>
+            </div>
+            <div
+                class="scrollDown hidden md:block absolute left-1/2 -translate-x-1/2 bottom-[5rem] sm:bottom-10 w-24 h-24 ">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/843d6dd5-c7b3-41cf-8e7f-97cc4ccae5d0/YCrOp0GNjk.json"
+                    background="transparent" speed="1" loop autoplay></dotlottie-player></iframe>
+            </div>
+        </div>
+        <!-- Herosection Ends -->
+
+        <!-- Horizontal Scroll Section Starts-->
+        <div class="horizontalScroll w-full ">
+            <div class="hcontainer h-[500vh] relative">
+                <div class="slides sticky overflow-hidden left-0 top-0 flex gap-10 w-full h-screen">
+                    <div class="slide w-full h-screen flex-shrink-0 relative">
+                        <div class="imageContainer w-full h-full absolute">
+                            <img class="w-full h-screen object-cover" src="./images/CYP.png" alt="">
+                        </div>
+                        <div class="textDets absolute bottom-32 md:bottom-44 left-2 md:left-10 w-full md:py-4">
+                            <h2 class="text-3xl 2xl:text-7xl leading-none font-bold">How will you power up?</h2>
+                        </div>
+                        <div class="imageCTA w-fit mt-4 left-2 md:left-10 bottom-16 md:bottom-28 bg-white px-5 py-2 rounded-full lg:text-3xl font-semibold overflow-hidden absolute border-2 border-black  text-black">
+                            <h3>Pick a Powertrain</h3>
+                        </div>
+                    </div>
+                    <div class="slide w-full h-screen flex-shrink-0 relative">
+                        <div class="imageContainer w-full h-full absolute">
+                            <img class="w-full h-screen object-cover" src="./images/GP.png" alt="">
+                        </div>
+                        <div class="textDets absolute bottom-32 md:bottom-44 left-2 md:left-10 w-full md:py-4">
+                            <h2 class="text-3xl 2xl:text-7xl leading-none font-bold">Gas Power</h2>
+                        </div>
+                        <div class="imageCTA w-fit mt-4 left-2 md:left-10 bottom-16 md:bottom-28 bg-white px-5 py-2 rounded-full lg:text-3xl font-semibold overflow-hidden absolute border-2 border-black  text-black">
+                            <h3>Explore Gas + Ecoboost</h3>
+                        </div>
+                    </div>
+                    <div class="slide w-full h-screen flex-shrink-0 relative">
+                        <div class="imageContainer w-full h-full absolute">
+                            <img class="w-full h-screen object-cover" src="./images/HV (1).png" alt="">
+                        </div>
+                        <div class="textDets absolute bottom-32 md:bottom-44 left-2 md:left-10 w-full md:py-4">
+                            <h2 class="text-3xl 2xl:text-7xl leading-none font-bold">Hybrid Versatility</h2>
+                        </div>
+                        <div class="imageCTA w-fit mt-4 left-2 md:left-10 bottom-16 md:bottom-28 bg-white px-5 py-2 rounded-full lg:text-3xl font-semibold overflow-hidden absolute border-2 border-black  text-black">
+                            <h3>Explore Hybrid Power</h3>
+                        </div>
+                    </div>
+                    <div class="slide w-full h-screen flex-shrink-0 relative">
+                        <div class="imageContainer w-full h-full absolute">
+                            <img class="w-full h-screen object-cover" src="./images/Electric.png" alt="">
+                        </div>
+                        <div class="textDets absolute bottom-32 md:bottom-44 left-2 md:left-10 w-full md:py-4">
+                            <h2 class="text-3xl 2xl:text-7xl leading-none font-bold">All-Electric</h2>
+                        </div>
+                        <div class="imageCTA w-fit mt-4 left-2 md:left-10 bottom-16 md:bottom-28 bg-white px-5 py-2 rounded-full lg:text-3xl font-semibold overflow-hidden absolute border-2 border-black  text-black">
+                            <h3>Explore EV Power</h3>
+                        </div>
+                    </div>
+                    <div class="slide w-full h-screen flex-shrink-0 relative">
+                        <div class="imageContainer w-full h-full absolute">
+                            <img class="w-full h-screen object-cover" src="./images/DM.png" alt="">
+                        </div>
+                        <div class="textDets absolute bottom-32 md:bottom-44 left-2 md:left-10 w-full md:py-4">
+                            <h2 class="text-3xl 2xl:text-7xl leading-none font-bold">Diesel Muscle</h2>
+                        </div>
+                        <div class="imageCTA w-fit mt-4 left-2 md:left-10 bottom-16 md:bottom-28 bg-white px-5 py-2 rounded-full lg:text-3xl font-semibold overflow-hidden absolute border-2 border-black  text-black">
+                            <h3>Explore Super Duty</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Horizontal Scroll Section Ends -->
+
+        <!-- 3D Section Starts -->
+        <div class="sections md:h-screen py-4">
+            <div id="sec3d" class="sec3d w-full h-full py-2">
+                <div class="relative overflow-hidden flex justify-center">
+                    <div class="data absolute -top-1 md:top-10 2xl:top-48 flex justify-between px-4 w-full">
+                        <div class="left-side w-full relative 2xl:left-20 ">
+                            <div class="engine  flex flex-col 2xl:gap-2">
+                                <h3 class="text-xl  dataInfo md:text-3xl lg:text-4xl 2xl:text-5xl font-medium">Engine
+                                </h3>
+                                <h2
+                                    class="text-sm dataInfo md:text-lg lg:text-2xl 2xl:text-3xl font-[monospace] font-thin">
+                                    5 Ltr.
+                                    V8</h2>
+                            </div>
+                        </div>
+                        <div class="right-side flex justify-between md:justify-evenly w-full">
+                            <div class="speed  flex flex-col 2xl:gap-2">
+                                <h3 class="text-xl dataInfo md:text-3xl  lg:text-4xl 2xl:text-5xl font-medium">Speed
+                                </h3>
+                                <h2
+                                    class="text-sm dataInfo md:text-lg lg:text-2xl 2xl:text-3xl font-[monospace] font-thin leading-none">
+                                    0-40 Mph <br>
+                                    in 4.3s</h2>
+                            </div>
+                            <div class="power  flex flex-col 2xl:gap-2">
+                                <h3 class="text-xl dataInfo md:text-3xl  lg:text-4xl 2xl:text-5xl font-medium">Power
+                                </h3>
+                                <h2
+                                    class="text-sm dataInfo md:text-lg lg:text-2xl 2xl:text-3xl font-[monospace] font-thin">
+                                    435Hp
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewport w-full">
+                        <spline-viewer class="scale-100"
+                            url="https://prod.spline.design/O6d0X8HdV79m4tlC/scene.splinecode"></spline-viewer>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 3D Section Ends -->
+
+
+
+        <!-- Video Section Starts -->
+        <div class="sections flex justify-center">
+            <div class="video-container w-full md:w-[90vw] py-4 relative">
+                <div class="video relative w-full">
+                    <video class="hoverVideo opacity-60" src="./videos/video1.mp4" muted></video>
+                    <div class="details absolute bottom-5 md:bottom-10 left-2 md:left-10">
+                        <h3 class="text-2xl lg:text-4xl 2xl:text-7xl font-semibold leading-none md:py-4">Hands-Free
+                            Highway Driving</h3>
+                        <h4 class="text-sm md:text-xl font-thin leading-none w-full md:w-2/3">Experience the magic of
+                            hands-free
+                            highway driving on 97% of controlled access highways in U.S. and Canada.</h4>
+                    </div>
+                </div>
+                <div
+                    class="videoCTA w-fit mt-4 left-2 md:left-10 bg-transparent px-4 py-2 font-medium uppercase rounded-full lg:text-3xl lg:font-normal lg:px-6 lg:py-4 overflow-hidden relative border-2 border-gray-800  text-white transition-colors before:absolute before:rounded-full before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:opacity-0 before:bg-[#0093f0] before:transition-opacity before:duration-300 before:ease-in before:content-[''] before:hover:opacity-100">
+                    <h3>Explore BlueCruise</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Video Section Ends -->
+
+        <!-- Categories Starts -->
+        <div id="sec_thrill" class="w-full h-full py-5 flex">
+            <div id="categories" class="categorySection flex items-center pt-10 flex-col ">
+                <div class="categoriesHeading relative w-full px-10 break-words text-3xl font-bold lg:text-6xl">
+                    <h1 class="catHead">Thrilling. Liberating. Hardworking. Iconic.</h1>
+                </div>
+
+                <div class="category w-full py-10 flex flex-wrap items-center justify-start gap-7 px-10">
+                    <div id="mustang" class="outerCard grow w-1/2 md:w-1/2 lg:w-1/4">
+                        <div class="categoryCard relative rounded-xl overflow-hidden bg-white">
+                            <div class="overlay2 w-full h-full bg-gradient-to-r from-black -left-[22%] absolute z-[6]">
+                            </div>
+                            <div class="cardImg scale-[1.2] w-full">
+                                <img src="./images/car.png" alt="Mustang">
+                            </div>
+                            <div
+                                class="cardTitle text-xl font-semibold lg:text-3xl lg:font-bold flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
+                                <h2 class="uppercase ">Mustang</h2>
+                                <i class="ri-arrow-right-circle-line"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="cardDescription  p-3 text-xl lg:text-2xl font-medium font-[Fregular] w-full tracking-tight leading-tight ">
+                            <h3>Raising heart rates for 60 years. Tailor the perfect Mustang for you, whether it's a
+                                workday or track day.</h3>
+                        </div>
+                    </div>
+                    <div id="bronco" class="outerCard grow w-1/2 md:w-1/2 lg:w-1/4">
+                        <div class="categoryCard relative rounded-xl overflow-hidden bg-white">
+                            <div class="overlay2 w-full h-full bg-gradient-to-r from-black -left-[22%] absolute z-[6]">
+                            </div>
+                            <div class="cardImg scale-[1.2] w-full ">
+                                <img class="object-cover" style="object-position: 1rem 0.5rem;"
+                                    src="./images/image suv.png" alt="Bronco">
+                            </div>
+                            <div
+                                class="cardTitle text-xl font-semibold lg:text-3xl lg:font-bold flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
+                                <h2 class="uppercase ">Bronco</h2>
+                                <i class="ri-arrow-right-circle-line"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="cardDescription  p-3 text-xl lg:text-2xl font-medium font-[Fregular] w-full tracking-tight leading-tight ">
+                            <h3>The trail awaits. So take off the doors, strap in, and unleash the SUV that's synonymous
+                                with adventure.</h3>
+                        </div>
+                    </div>
+                    <div id="f-150" class="outerCard grow w-1/2 md:w-1/2 lg:w-1/4">
+                        <div class="categoryCard relative rounded-xl overflow-hidden bg-white">
+                            <div class="overlay2 w-full h-full bg-gradient-to-r from-black -left-[22%] absolute z-[6]">
+                            </div>
+                            <div class="cardImg scale-[1.2] w-full">
+                                <img src="./images/image truck.png" alt="F-150">
+                            </div>
+                            <div
+                                class="cardTitle text-xl font-semibold lg:text-3xl lg:font-bold flex gap-3 absolute top-4 left-4 lg:left-[2rem] z-[4]">
+                                <h2 class="uppercase ">F-150</h2>
+                                <i class="ri-arrow-right-circle-line"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="cardDescription  p-3 text-xl lg:text-2xl font-medium font-[Fregular] w-full tracking-tight leading-tight ">
+                            <h3>If there's work to be done or weekend fun to be had, just look around. A Ford F-150
+                                truck is probably there.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="categoriesCTA text-lg mt-2 mb-5 bg-transparent px-4 py-2 font-medium uppercase rounded-full lg:text-3xl lg:font-normal lg:px-6 lg:py-4 overflow-hidden relative border-2 border-gray-800  text-white transition-colors before:absolute before:rounded-full before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:opacity-0 before:bg-[#0093f0] before:transition-opacity before:duration-300 before:ease-in before:content-[''] before:hover:opacity-100">
+                    <h3>Explore More</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Categories Ended  -->
+
+        <!-- Footer starts here  -->
+        <div class="footersection w-full h-full px-10 mt-5 flex flex-col">
+
+            <div class="flex flex-wrap gap-10 w-full h-fit justify-center items-center md:items-start py-5">
+                <div class="relative w-full flex-1 h-[13rem]">
+                    <div id="star" class="image w-[6rem] absolute top-1 left-1 ">
+                        <img class="" src="./assets/star.png" alt="">
+                    </div>
+                    <div class="stayUpdated z-[2] absolute left-10 top-10 md:left-9 md:top-8">
+                        <h1 class="text-[2.7rem] xl:text-[4rem] font-semibold leading-none tracking-tight"> Stay up
+                            to date on all the latest news</h1>
+                    </div>
+                </div>
+                <div class="w-full flex-1 justify-center hidden md:flex">
+                    <p class="text-xl">
+                        Customer Relationship Center <br>
+                        P.O. Box 6248 <br>
+                        Dearborn, MI 48126 <br><br>
+                        <b>Phone:</b> +1 (800) 392-3673 <br>
+                        <b>E-mail:</b> fordIR@ford.com<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full border-t border-b py-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 justify-items-start px-10">
+                    <div class="md:py-4">
+                        <h4 class="text-xl md:text-4xl font-semibold px-2 underLineAnimation"> Vehicles </h4>
+                        <ul class="text-[#ccc] md:text-xl hidden font-light  md:block">
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Suvs </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Cars </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Trucks </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Vans </a></li>
+                        </ul>
+                    </div>
+                    <div class="md:py-4">
+                        <h4 class="text-xl md:text-4xl font-semibold px-2 underLineAnimation"> Finance </h4>
+                        <ul class="text-[#ccc] md:text-xl hidden font-light  md:block">
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Ford Credit Home </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Ford Insure </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Finance Options </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Investor Center </a></li>
+                        </ul>
+                    </div>
+                    <div class="md:py-4">
+                        <h4 class="text-xl md:text-4xl font-semibold px-2 underLineAnimation"> Contact Us </h4>
+                        <ul class="text-[#ccc] md:text-xl hidden font-light  md:block">
+                            <li class="py-2"> <i class="ri-facebook-fill"></i> <a href="https://www.facebook.com/ford"
+                                    class="hover:text-white"> Facebook </a>
+                            </li>
+                            <li class="py-2"> <i class="ri-instagram-line"></i> <a
+                                    href="https://www.instagram.com/ford/" class="hover:text-white"> Instagram
+                                </a></li>
+                            <li class="py-2"> <i class="ri-twitter-x-fill"></i> <a href="https://x.com/Ford"
+                                    class="hover:text-white"> Twitter / X </a></li>
+                            <li class="py-2"> <i class="ri-linkedin-fill"></i> <a
+                                    href="https://www.linkedin.com/company/ford-motor-company/"
+                                    class="hover:text-white"> Linkedin </a></li>
+                        </ul>
+                    </div>
+                    <div class="md:py-4">
+                        <h4 class="text-xl md:text-4xl font-semibold px-2 underLineAnimation"> Experience Ford </h4>
+                        <ul class="text-[#ccc] md:text-xl hidden font-light  md:block">
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Ford Pro </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Racing </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> About Ford </a></li>
+                            <li class="py-2"> <i class="ri-arrow-right-s-line "></i> <a href="#"
+                                    class="hover:text-white"> Company News </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row py-2 justify-between items-center mb-2 gap-4 font-thin text-[#ccc]">
+                <div class="hover:text-white">
+                    <p> &#169; 2024 Ford Motor Company </p>
+                </div>
+                <div class="">
+                    <img class="h-12" src="./assets/Ford .png" alt="">
+                </div>
+                <div>
+                    <p><a class="hover:text-white" href="https://www.ford.com/help/privacy/">Privacy
+                            Policy</a> | <a class="hover:text-white" href="https://www.ford.com/help/terms/">Terms &
+                            Conditions</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer ends here -->
+
+
+        <a href="#" title="Go To Top"
+            class="to-top  bg-white fixed bottom-5 right-5 w-[40px] h-[40px] flex items-center justify-center">
+            <i class="ri-arrow-up-line text-black"></i>
+        </a>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.4.1/build/spline-viewer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>`
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+<!-- 
+Used z-index    
+    3,50,2,1,4,5
+    
+    
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } -->
